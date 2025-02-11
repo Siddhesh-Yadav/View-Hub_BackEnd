@@ -13,7 +13,7 @@ import { addUserHistory, getUserHistory } from "../controllers/userHistory.contr
 import { getVideos, sendVideoInvite } from "../controllers/video.controller.js";
 
 router.post("/login",login);
-router.post("signup",signup);
+router.post("/signup",signup);
 router.post("/favorites/videos",verifyAndDecrypt,addFavouriteVideo);
 router.get("/favorites/videos",verifyAndDecrypt,isFavouriteVideo);
 router.get("user",verifyAndDecrypt,findUser);
